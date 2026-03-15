@@ -61,7 +61,7 @@ remotes::install_github("rensa/ggflags")
 
 ```r
 # From the R console — set working directory first:
-setwd("/path/to/WORLD_CUP_FINAL_2")
+setwd("/path/to/Datawiz_WORLD_-CUP")
 source("worldcup_dashboard.R")
 # → Saves dashboard.html in the same directory
 
@@ -90,27 +90,6 @@ Loaded from: `13_worldcup.RData`
 
 ---
 
-## File Structure
-
-```
-WORLD_CUP_FINAL_2/
-│
-├── worldcup_dashboard.R      ← Single consolidated script — run this
-├── 13_worldcup.RData         ← Source data (worldcup package)
-├── dashboard.html            ← Generated output
-│
-├── Chart 1.R                 ← Standalone: Home Spike chart
-├── Chart 2.R                 ← Standalone: Scoring Boost chart
-├── Chart 3.R                 ← Standalone: Top 4 Grid chart
-├── dashboard.R               ← Original multi-file assembler
-├── data_prep.R               ← Exploratory data prep (generates .rds files)
-│
-└── WORLD_CUP_FINAL_2.Rproj  ← RStudio project file
-```
-
-> **Note:** `worldcup_dashboard.R` is the single entry point. The individual `Chart*.R` files and `dashboard.R` are retained for reference but are not needed to generate the final output.
-
----
 
 ## R Packages Used
 
